@@ -54,7 +54,7 @@ public class StudentManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -81,7 +81,7 @@ public class StudentManagementSystem {
     private static void addStudent() {
         System.out.print("Enter student ID: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
         System.out.print("Enter student name: ");
         String name = scanner.nextLine();
         System.out.print("Enter student age: ");
@@ -106,7 +106,7 @@ public class StudentManagementSystem {
     private static void updateStudent() {
         System.out.print("Enter student ID to update: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         for (Student student : students) {
             if (student.getId() == id) {
